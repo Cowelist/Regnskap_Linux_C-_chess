@@ -6,7 +6,9 @@ os.system ("clear")
 
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
-pygame.dispaly.set_caption("Chess")
+pygame.display.set_caption("Chess")
+
+clock = pygame.time.Clock()
 
 running = True
 while running:
@@ -16,7 +18,7 @@ while running:
 
 screen.fill ((225, 255, 255))
 
-
+clock.tick(60)
 
 
 #print("\033[34m █\033[0m")
